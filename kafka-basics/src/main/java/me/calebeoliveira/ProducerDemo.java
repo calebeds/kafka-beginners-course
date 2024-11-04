@@ -13,7 +13,7 @@ public class ProducerDemo {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProducerDemo.class.getSimpleName());
 
     public static void main(String[] args) {
-        LOGGER.info("hello world");
+        LOGGER.info("I am a Kafka Producer!");
 
         // create producer properties
         Properties properties = new Properties();

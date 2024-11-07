@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0515da23-87d0-4dfc-9a85-6924425d8ad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/me/calebeoliveira/ConsumerDemoCooperative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/src/main/java/me/calebeoliveira/WikimediaChangesProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,8 @@
     "Application.ProducerDemoWithCallback.executor": "Run",
     "Maven.kafka-basics [clean].executor": "Run",
     "Maven.kafka-basics [compile].executor": "Run",
+    "Maven.kafka-beginners-course [clean].executor": "Run",
+    "Maven.kafka-beginners-course [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",

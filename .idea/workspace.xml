@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0515da23-87d0-4dfc-9a85-6924425d8ad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/me/calebeoliveira/ConsumerDemoWithShutdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/me/calebeoliveira/ConsumerDemoCooperative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ConsumerDemo.executor": "Run",
+    "Application.ConsumerDemoCooperative.executor": "Run",
     "Application.ConsumerDemoWithShutdown.executor": "Run",
     "Application.ProducerDemo.executor": "Run",
     "Application.ProducerDemoKeys.executor": "Run",
@@ -52,7 +53,7 @@
       <recent name="me.calebeoliveira" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerDemoWithShutdown">
+  <component name="RunManager" selected="Application.ConsumerDemoCooperative">
     <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemo" />
       <module name="kafka-basics" />
@@ -66,7 +67,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerDemoWithShutdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerDemoCooperative" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemoCooperative" />
+      <module name="kafka-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.calebeoliveira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerDemoWithShutdown" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemoWithShutdown" />
       <module name="kafka-basics" />
       <extension name="coverage">
@@ -105,26 +119,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerDemoWithCallback" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ProducerDemoWithCallback" />
-      <module name="kafka-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.calebeoliveira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.ConsumerDemoCooperative" />
+      <item itemvalue="Application.ConsumerDemo" />
+      <item itemvalue="Application.ConsumerDemoWithShutdown" />
+      <item itemvalue="Application.ProducerDemo" />
+      <item itemvalue="Application.ProducerDemoKeys" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConsumerDemoWithShutdown" />
+        <item itemvalue="Application.ConsumerDemoCooperative" />
         <item itemvalue="Application.ProducerDemoKeys" />
+        <item itemvalue="Application.ConsumerDemoWithShutdown" />
         <item itemvalue="Application.ProducerDemo" />
         <item itemvalue="Application.ConsumerDemo" />
-        <item itemvalue="Application.ProducerDemoWithCallback" />
       </list>
     </recent_temporary>
   </component>

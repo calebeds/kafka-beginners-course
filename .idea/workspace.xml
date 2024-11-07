@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0515da23-87d0-4dfc-9a85-6924425d8ad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/src/main/java/me/calebeoliveira/WikimediaChangesProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +39,7 @@
     "Application.ProducerDemo.executor": "Run",
     "Application.ProducerDemoKeys.executor": "Run",
     "Application.ProducerDemoWithCallback.executor": "Run",
+    "Application.WikimediaChangesProducer.executor": "Run",
     "Maven.kafka-basics [clean].executor": "Run",
     "Maven.kafka-basics [compile].executor": "Run",
     "Maven.kafka-beginners-course [clean].executor": "Run",
@@ -58,20 +55,7 @@
       <recent name="me.calebeoliveira" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerDemoCooperative">
-    <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemo" />
-      <module name="kafka-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.calebeoliveira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WikimediaChangesProducer">
     <configuration name="ConsumerDemoCooperative" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemoCooperative" />
       <module name="kafka-basics" />
@@ -124,20 +108,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WikimediaChangesProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.WikimediaChangesProducer" />
+      <module name="kafka-producer-wikimedia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.calebeoliveira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.WikimediaChangesProducer" />
       <item itemvalue="Application.ConsumerDemoCooperative" />
-      <item itemvalue="Application.ConsumerDemo" />
       <item itemvalue="Application.ConsumerDemoWithShutdown" />
       <item itemvalue="Application.ProducerDemo" />
       <item itemvalue="Application.ProducerDemoKeys" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WikimediaChangesProducer" />
         <item itemvalue="Application.ConsumerDemoCooperative" />
         <item itemvalue="Application.ProducerDemoKeys" />
         <item itemvalue="Application.ConsumerDemoWithShutdown" />
         <item itemvalue="Application.ProducerDemo" />
-        <item itemvalue="Application.ConsumerDemo" />
       </list>
     </recent_temporary>
   </component>

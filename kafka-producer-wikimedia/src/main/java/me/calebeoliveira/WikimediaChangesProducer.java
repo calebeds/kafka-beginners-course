@@ -3,6 +3,7 @@ package me.calebeoliveira;
 import com.launchdarkly.eventsource.EventHandler;
 import com.launchdarkly.eventsource.EventSource;
 import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.net.URI;
@@ -14,13 +15,18 @@ public class WikimediaChangesProducer {
         final String boostrapServers = "127.0.0.1:9092";
 
         // create Producer properties
-        // create producer properties
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers", boostrapServers);
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, boostrapServers);
 
         // set producer properties
-        properties.setProperty("key.serializer", StringSerializer.class.getName());
-        properties.setProperty("value.serializer", StringSerializer.class.getName());
+        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
+        // set safe producer configs (Kafka <= 2.8)
+//        properties.setProperty(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, "true");
+//        properties.setProperty(ProducerConfig.ACKS_CONFIG, "all"); // same as setting -1
+//        properties.setProperty(ProducerConfig.RETRIES_CONFIG, Integer.toString(Integer.MAX_VALUE));
+
 
         // create the Producer
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);

@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0515da23-87d0-4dfc-9a85-6924425d8ad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-consumer-opensearch/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/me/calebeoliveira/OpenSearchConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/me/calebeoliveira/OpenSearchConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +38,14 @@
     "Application.ConsumerDemo.executor": "Run",
     "Application.ConsumerDemoCooperative.executor": "Run",
     "Application.ConsumerDemoWithShutdown.executor": "Run",
+    "Application.OpenSearchConsumer.executor": "Run",
     "Application.ProducerDemo.executor": "Run",
     "Application.ProducerDemoKeys.executor": "Run",
     "Application.ProducerDemoWithCallback.executor": "Run",
     "Application.WikimediaChangesProducer.executor": "Run",
+    "Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment.executor": "Run",
+    "Docker.kafka-consumer-opensearch.opensearch: Compose Deployment.executor": "Run",
+    "Docker.kafka-consumer-opensearch: Compose Deployment.executor": "Run",
     "Maven.kafka-basics [clean].executor": "Run",
     "Maven.kafka-basics [compile].executor": "Run",
     "Maven.kafka-beginners-course [clean].executor": "Run",
@@ -59,49 +61,10 @@
       <recent name="me.calebeoliveira" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WikimediaChangesProducer">
-    <configuration name="ConsumerDemoCooperative" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemoCooperative" />
-      <module name="kafka-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.calebeoliveira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerDemoWithShutdown" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ConsumerDemoWithShutdown" />
-      <module name="kafka-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.calebeoliveira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ProducerDemo" />
-      <module name="kafka-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="me.calebeoliveira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerDemoKeys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.ProducerDemoKeys" />
-      <module name="kafka-basics" />
+  <component name="RunManager" selected="Application.OpenSearchConsumer">
+    <configuration name="OpenSearchConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.OpenSearchConsumer" />
+      <module name="kafka-consumer-opensearch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="me.calebeoliveira.*" />
@@ -125,20 +88,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka-consumer-opensearch: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="kafka-consumer-opensearch/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="opensearch-dashboards" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="kafka-consumer-opensearch/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka-consumer-opensearch.opensearch: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="opensearch" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="kafka-consumer-opensearch/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Application.OpenSearchConsumer" />
       <item itemvalue="Application.WikimediaChangesProducer" />
-      <item itemvalue="Application.ConsumerDemoCooperative" />
-      <item itemvalue="Application.ConsumerDemoWithShutdown" />
-      <item itemvalue="Application.ProducerDemo" />
-      <item itemvalue="Application.ProducerDemoKeys" />
+      <item itemvalue="Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment" />
+      <item itemvalue="Docker.kafka-consumer-opensearch.opensearch: Compose Deployment" />
+      <item itemvalue="Docker.kafka-consumer-opensearch: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OpenSearchConsumer" />
+        <item itemvalue="Docker.kafka-consumer-opensearch: Compose Deployment" />
+        <item itemvalue="Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment" />
+        <item itemvalue="Docker.kafka-consumer-opensearch.opensearch: Compose Deployment" />
         <item itemvalue="Application.WikimediaChangesProducer" />
-        <item itemvalue="Application.ConsumerDemoCooperative" />
-        <item itemvalue="Application.ProducerDemoKeys" />
-        <item itemvalue="Application.ConsumerDemoWithShutdown" />
-        <item itemvalue="Application.ProducerDemo" />
       </list>
     </recent_temporary>
   </component>

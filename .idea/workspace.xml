@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0515da23-87d0-4dfc-9a85-6924425d8ad7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/me/calebeoliveira/OpenSearchConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/me/calebeoliveira/OpenSearchConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-wikimedia/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-wikimedia/src/main/java/me/calebeoliveira/WikimediaStreamsApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-wikimedia/src/main/java/me/calebeoliveira/processor/BotCountStreamBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-wikimedia/src/main/java/me/calebeoliveira/processor/EventCountTimeseriesBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-wikimedia/src/main/java/me/calebeoliveira/processor/WebsiteCountStreamBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,35 +38,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ConsumerDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConsumerDemoCooperative.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConsumerDemoWithShutdown.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OpenSearchConsumer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProducerDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProducerDemoKeys.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProducerDemoWithCallback.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WikimediaChangesProducer.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.kafka-consumer-opensearch.opensearch: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.kafka-consumer-opensearch: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kafka-basics [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kafka-basics [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kafka-beginners-course [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kafka-beginners-course [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConsumerDemo.executor": "Run",
+    "Application.ConsumerDemoCooperative.executor": "Run",
+    "Application.ConsumerDemoWithShutdown.executor": "Run",
+    "Application.OpenSearchConsumer.executor": "Run",
+    "Application.ProducerDemo.executor": "Run",
+    "Application.ProducerDemoKeys.executor": "Run",
+    "Application.ProducerDemoWithCallback.executor": "Run",
+    "Application.WikimediaChangesProducer.executor": "Run",
+    "Application.WikimediaStreamsApp.executor": "Run",
+    "Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment.executor": "Run",
+    "Docker.kafka-consumer-opensearch.opensearch: Compose Deployment.executor": "Run",
+    "Docker.kafka-consumer-opensearch: Compose Deployment.executor": "Run",
+    "Maven.kafka-basics [clean].executor": "Run",
+    "Maven.kafka-basics [compile].executor": "Run",
+    "Maven.kafka-beginners-course [clean].executor": "Run",
+    "Maven.kafka-beginners-course [compile].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/calebesantos/dev/pepsico-projects/kafka-beginners-course"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="me.calebeoliveira" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OpenSearchConsumer">
+  <component name="RunManager" selected="Application.WikimediaChangesProducer">
     <configuration name="OpenSearchConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.OpenSearchConsumer" />
       <module name="kafka-consumer-opensearch" />
@@ -76,6 +85,19 @@
     <configuration name="WikimediaChangesProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.WikimediaChangesProducer" />
       <module name="kafka-producer-wikimedia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.calebeoliveira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WikimediaStreamsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.calebeoliveira.WikimediaStreamsApp" />
+      <module name="kafka-streams-wikimedia" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="me.calebeoliveira.*" />
@@ -113,33 +135,20 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="kafka-consumer-opensearch.opensearch: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="opensearch" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="kafka-consumer-opensearch/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Application.WikimediaStreamsApp" />
       <item itemvalue="Application.OpenSearchConsumer" />
       <item itemvalue="Application.WikimediaChangesProducer" />
       <item itemvalue="Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment" />
-      <item itemvalue="Docker.kafka-consumer-opensearch.opensearch: Compose Deployment" />
       <item itemvalue="Docker.kafka-consumer-opensearch: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OpenSearchConsumer" />
         <item itemvalue="Application.WikimediaChangesProducer" />
+        <item itemvalue="Application.WikimediaStreamsApp" />
+        <item itemvalue="Application.OpenSearchConsumer" />
         <item itemvalue="Docker.kafka-consumer-opensearch: Compose Deployment" />
         <item itemvalue="Docker.kafka-consumer-opensearch.opensearch-dashboards: Compose Deployment" />
-        <item itemvalue="Docker.kafka-consumer-opensearch.opensearch: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
